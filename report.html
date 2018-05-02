@@ -18101,7 +18101,8 @@ Data points considered outliers for the feature &#39;Delicatessen&#39;:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong>
- 索引为[65,66,75,128，154]的数据都是多于一个特征被看作异常点的，我认为可以从数据集中移除。因为其会影响其回归效果</p>
+ 索引为[65,66,75,128，154]的数据都是多于一个特征被看作异常点的。
+ 由于仅从单一特征判断异常数据的话，那异常数据量达到了40余个，相对总样本来说，占比过大，一旦移除之后，容易造成信息损失，因此判断2个以上特征同时异常才判断为异常数据是合理的，我认为应当被移除。</p>
 
 </div>
 </div>
